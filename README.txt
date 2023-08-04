@@ -145,11 +145,13 @@ cd /etc/nginx/sites-available/
 
 sudo nano default
 
-## make some line into comments - example : root /var/www/html;, index index.html, try_files ...
+## make some line into comments - example : root /var/www/html;, index index.html, uri uri try_files ...
 
 and add in location:
 include proxy_params;
 proxy_pass http://unix:/home/ubuntu/project/app.sock;
+
+add server name ip_address www.domain.com domain.com;
 
 
 sudo systemctl reload nginx
