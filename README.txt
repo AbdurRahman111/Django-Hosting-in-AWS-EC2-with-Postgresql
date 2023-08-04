@@ -128,7 +128,7 @@ programs:gunicorn
 
 
 
-
+sudo supervisorctl reread
 sudo mkdir /var/log/gunicorn
 
 sudo supervisorctl reread
