@@ -180,6 +180,15 @@ to make HTTPS request:
 
 	- 2
 
+
+
+
+if you changes anything need to stop supervisor and start again
+sudo systemctl stop supervisor
+sudo systemctl start supervisor
+
+
+
 sudo systemctl reload nginx
 
 
