@@ -147,7 +147,7 @@ sudo nano default
 
 ## make some line into comments - example : root /var/www/html;, index index.html, uri uri try_files ...
 
-and add in location:
+and add in location / :
 include proxy_params;
 proxy_pass http://unix:/home/ubuntu/project/app.sock;
 
