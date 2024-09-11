@@ -75,7 +75,7 @@ in settings :
 comment - STATICFILES_DIRS
 
 and add:
-STATIC_ROOT=os.path.join(BASE_DIR,'static/')
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles/') # basically, when collectstatic command hit, it creates staticfiles on project. so we need to attach this staticfiles here
 python manage.py collectstatic
 
 
