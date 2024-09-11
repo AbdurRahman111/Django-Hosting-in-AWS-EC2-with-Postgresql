@@ -169,6 +169,8 @@ location /static/{
 
 sudo systemctl reload nginx
 
+sudo gpasswd -a www-data ubuntu
+
 python manage.py collectstatic
 
 
