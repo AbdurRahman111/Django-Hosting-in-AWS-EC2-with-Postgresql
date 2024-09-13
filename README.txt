@@ -195,3 +195,9 @@ sudo systemctl reload nginx
 
 
 
+for supervisor log realtime:
+==============================
+sudo tail -f  /var/log/gunicorn/gunicorn.out.log
+sudo tail -f  /var/log/gunicorn/gunicorn.err.log
+
+
