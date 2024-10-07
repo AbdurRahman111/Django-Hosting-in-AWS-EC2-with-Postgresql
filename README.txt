@@ -181,7 +181,7 @@ to make HTTPS request:
 3. sudo certbot --nginx -d YourDomain.com -d www.yourDomain.com 
 
 	- 2
-
+4. sudo certbot renew --dry-run # auto renew for ssl
 
 
 
